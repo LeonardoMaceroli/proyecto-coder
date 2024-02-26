@@ -12,6 +12,11 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+img {
+    max-width: 100%;
+}
+
+/*Barra de navegacion*/
 .navbar {
     background-color: #ffc0cb;
     font-size: 1.5rem;
@@ -27,9 +32,7 @@ body {
     color: #fff;
 }
 
-img {
-    max-width: 100%;
-}
+/*Titulos y parrafos*/
 
 h1 {
     font-size: 2.5rem;
@@ -51,9 +54,7 @@ p {
     font-size: 1.5rem;
 }
 
-/* .img-inicio {
-    margin-bottom: 20px;
-} */
+/*Inicio*/
 
 .img-inicio {
     width: 350px;
@@ -66,6 +67,7 @@ p {
     padding: 15px 20px;
 }
 
+/*Productos*/
 
 .productos {
     display: flex;
@@ -82,6 +84,8 @@ p {
     height: 250px;
     margin: 15px 0 15px 0;
 }
+
+/*Galeria*/
 
 .imagen {
     width: 400px;
@@ -100,11 +104,14 @@ p {
     padding: 0px 15px 10px 15px;
 }
 
+/*Contacto*/
+
 .contacto {
     display: grid;
     justify-content: space-around;
 }
 
+/*Footer*/
 
 footer {
     background: #ffc0cb;
@@ -147,6 +154,7 @@ ul {
     color: #fff;
 }
 
+/*Media query Tablet*/
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .productos {
@@ -187,7 +195,6 @@ ul {
         text-align: justify;
         padding-top: 55px;
     }
-
 
     .contenedor-img {
         display: grid;
@@ -246,6 +253,8 @@ ul {
         font-size: 2rem;
     }
 }
+
+/*Media query Desktop*/
 
 @media screen and (min-width: 1200px) {
     .productos {
