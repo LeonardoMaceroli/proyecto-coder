@@ -1,0 +1,36 @@
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(1, 6fr);
+    place-items: center;
+
+    .contenedor-img {
+        display: grid;
+        gap: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+
+        .imagen {
+            width: 315px;
+            height: 250px;
+        }
+    }
+
+    @include tablet {
+        .contenedor-img {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @include desktop {
+        .contenedor-img {
+            display: grid;
+            grid-template-columns: repeat(3, 6fr);
+
+            .imagen{
+                width: 400px;
+                height: 300px;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.nosotros {
+
+    p {
+        text-align: center;
+    }
+
+    .nosotros-img {
+        display: block;
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    @include tablet {
+
+        .nosotros-img {
+            width: 90%;
+        }
+    }
+
+    @include desktop {
+        h1{
+            text-align: left;
+            margin-left: 100px;
+        }
+
+        .nosotros-img {
+            width: 95%;
+        }
+    }
+}
